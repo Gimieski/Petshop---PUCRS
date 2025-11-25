@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Agendamento - PetShop Cãopanheiro">
+  <title>PetShop Cãopanheiro - Agendamento</title>
+
+  <!-- Bootstrap 5 -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  >
+
+  <!-- CSS simples -->
+  <style>
+    body {
+      background: #f9f9f9;
+    }
+    header, footer {
+      background: #222;
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+    header nav a, footer nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+    .container {
+      margin-top: 30px;
+      margin-bottom: 40px;
+    }
+    h2, h3 {
+      margin-bottom: 20px;
+    }
+    .card {
+      margin-bottom: 25px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+ <header class="bg-primary text-white py-3 mb-4">
+    <div class="container">
+      <h1 class="text-center">PetShop Cãopanheiro</h1>
+
+      <nav class="text-center mt-2">
+        <a class="text-white fw-bold mx-2" href="index.html">Início</a>
+        <a class="text-white fw-bold mx-2" href="produtos.html">Produtos</a>
+        <a class="text-white fw-bold mx-2" href="servicos.html">Serviços</a>
+        <a class="text-white fw-bold mx-2" href="contatos.html">Contato</a>
+        <a class="text-white fw-bold mx-2" href="agendamento.html">Agendamento</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- CONTEÚDO -->
+  <div class="container">
+
+    <h2>Agendamento de Serviços</h2>
+    <p>Preencha todas as informações para realizar o agendamento para o seu pet.</p>
+
+    <!-- FORM CLIENTE -->
+    <form method="GET" action="agendamento.html">
+      <div class="card p-4">
+        <h3>Dados do Cliente</h3>
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label class="form-label required">Nome completo *</label>
+            <input type="text" class="form-control" required placeholder="Seu nome completo" required>
+          </div>
+
+          <div class="col-md-6 mb-3">
+            <label class="form-label required">CPF *</label>
+            <input type="text" class="form-control" required placeholder="000.000.000-00" required>
+          </div>
+
+          <div class="col-md-8 mb-3">
+            <label class="form-label required">Endereço *</label>
+            <input type="text" class="form-control" required placeholder="Rua, número, bairro" required>
+          </div>
+
+          <div class="col-md-4 mb-3">
+            <label class="form-label required">Telefone *</label>
+            <input type="tel" class="form-control" required placeholder="(51) 99999-9999" required>
+          </div>
+
+          <div class="col-md-6 mb-3">
+            <label class="form-label required">E-mail *</label>
+            <input type="email" class="form-control" required placeholder="email@exemplo.com" required>
+          </div>
+
+          <div class="col-md-6 mb-3">
+            <label class="form-label">Sexo *</label><br>
+            <input type="radio" name="sexo" value="M" required> Masculino
+            <input class="ms-3" type="radio" name="sexo" value="F"> Feminino
+            <input class="ms-3" type="radio" name="sexo" value="O"> Outro
+          </div>
+        </div>
+      </div>
+
+      <!-- FORM PET -->
+      <div class="card p-4">
+        <h3>Dados do Pet</h3>
+
+        <div class="row">
+          <div class="col-md-4 mb-3">
+            <label class="form-label required">Nome do Pet *</label>
+            <input type="text" class="form-control" required placeholder="Ex: Thor" required>
+          </div>
+
+          <div class="col-md-4 mb-3">
+            <label class="form-label required">Raça *</label>
+            <input type="text" class="form-control" required placeholder="Ex: Poodle, SRD" required>
+          </div>
+
+          <div class="col-md-4 mb-3">
+            <label class="form-label required">Idade (anos) *</label>
+            <input type="number" class="form-control" required min="0" max="30" required>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- AGENDAMENTO -->
+      <div class="card p-4">
+        <h3>Serviço e Agendamento</h3>
+
+        <div class="row">
+          <div class="col-md-4 mb-3">
+            <label class="form-label required">Serviço *</label>
+            <select class="form-select" required>
+              <option value="">Selecione...</option>
+              <option>Banho</option>
+              <option>Tosa</option>
+              <option>Banho + Tosa</option>
+            </select>
+          </div>
+
+          <div class="col-md-4 mb-3">
+            <label class="form-label required">Dia *</label>
+            <input type="date" class="form-control" required>
+          </div>
+
+          <div class="col-md-4 mb-3">
+            <label class="form-label required">Horário *</label>
+            <input type="time" class="form-control" required>
+          </div>
+
+          <div class="col-md-6 mt-3">
+            <label class="form-label required">Método de entrega *</label><br>
+
+            <input type="radio" name="entrega" value="telebusca" required> Tele-busca  
+            <input class="ms-3" type="radio" name="entrega" value="local"> Levar ao local
+          </div>
+
+          <div class="col-md-12 mt-3">
+            <label class="form-label">Observações (opcional)</label>
+            <textarea class="form-control" rows="3" placeholder="Informações adicionais"></textarea>
+          </div>
+
+          <div class="col-md-12 mt-4">
+            <button class="btn btn-primary w-100" type="submit">Finalizar Agendamento</button>
+          </div>
+        </div>
+      </div>
+    </form>
+
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 PetShop Cãopanheiro - Todos os direitos reservados.</p>
+    <p>Desenvolvido por Gabriel Mansolff | Contato: caopanheiro@gmail.com</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

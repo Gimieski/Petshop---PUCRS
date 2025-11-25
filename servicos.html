@@ -5,48 +5,91 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Serviços - PetShop Cãopanheiro">
   <title>PetShop Cãopanheiro - Serviços</title>
+
+  <!-- Bootstrap -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  >
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-  <header>
-    <h1>PetShop Cãopanheiro</h1>
-    <nav>
-      <a href="index.html">Início</a> |
-      <a href="produtos.html">Produtos</a> |
-      <a href="servicos.html">Serviços</a> |
-      <a href="contato.html">Contato</a>
-    </nav>
+
+  <!-- ================= HEADER ================= -->
+  <header class="bg-primary text-white py-3 mb-4">
+    <div class="container text-center">
+      <h1>PetShop Cãopanheiro</h1>
+
+      <nav class="mt-2">
+        <a class="text-white fw-bold mx-2" href="index.html">Início</a>
+        <a class="text-white fw-bold mx-2" href="produtos.html">Produtos</a>
+        <a class="text-white fw-bold mx-2" href="servicos.html">Serviços</a>
+        <a class="text-white fw-bold mx-2" href="contatos.html">Contato</a>
+        <a class="text-white fw-bold mx-2" href="agendamento.html">Agendamento</a>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <h2>Serviços Oferecidos</h2>
+  <!-- ================= MAIN ================= -->
+  <main class="container mb-5">
 
-    <section>
-      <article>
-        <h3>Banho e Tosa</h3>
-        <p>Serviço completo de higiene e estética para seu pet.</p>
-        <p><strong>Valor:</strong> R$ 70,00</p>
-        <p><strong>Tele-busca:</strong> Sim</p>
-      </article>
+    <h2 class="text-center mb-4">Serviços Oferecidos</h2>
 
-      <article>
-        <h3>Consulta Veterinária</h3>
-        <p>Atendimento clínico com profissionais especializados.</p>
-        <p><strong>Valor:</strong> R$ 120,00</p>
-        <p><strong>Tele-busca:</strong> Não</p>
-      </article>
+    <div class="row g-4">
 
-      <article>
-        <h3>Hidratação e cuidados com o pelo</h3>
-        <p>Tratamento especial para deixar os pelos mais saudáveis e brilhantes.</p>
-        <p><strong>Valor:</strong> R$ 50,00</p>
-        <p><strong>Tele-busca:</strong> Sim</p>
-      </article>
-    </section>
+      <!-- Serviço 1 -->
+      <div class="col-md-4">
+        <div class="card shadow-sm h-100">
+          <div class="card-body">
+            <h3 class="card-title">Banho e Tosa</h3>
+            <p class="card-text">Serviço completo de higiene e estética para seu pet.</p>
+            <p><strong>Valor:</strong> R$ 70,00</p>
+            <p><strong>Tele-busca:</strong> Sim</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Serviço 2 -->
+      <div class="col-md-4">
+        <div class="card shadow-sm h-100">
+          <div class="card-body">
+            <h3 class="card-title">Consulta Veterinária</h3>
+            <p class="card-text">Atendimento clínico com profissionais especializados.</p>
+            <p><strong>Valor:</strong> R$ 120,00</p>
+            <p><strong>Tele-busca:</strong> Não</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Serviço 3 -->
+      <div class="col-md-4">
+        <div class="card shadow-sm h-100">
+          <div class="card-body">
+            <h3 class="card-title">Hidratação e Cuidados com o Pelo</h3>
+            <p class="card-text">Tratamento especial para deixar os pelos mais saudáveis e brilhantes.</p>
+            <p><strong>Valor:</strong> R$ 50,00</p>
+            <p><strong>Tele-busca:</strong> Sim</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
   </main>
 
-  <footer>
+  <!-- ================= FOOTER ================= -->
+  <footer class="bg-dark text-white text-center py-4">
     <p>© 2025 PetShop Cãopanheiro - Todos os direitos reservados.</p>
     <p>Desenvolvido por Gabriel Mansolff | Contato: caopanheiro@gmail.com</p>
   </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JS próprio -->
+  <script src="js/script.js"></script>
+
 </body>
 </html>

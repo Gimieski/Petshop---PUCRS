@@ -3,30 +3,117 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <meta name="description" content="PetShop Cãopanheiro - Cuidando com amor do seu melhor amigo.">
   <title>PetShop Cãopanheiro - Início</title>
+
+  <!-- Bootstrap CSS -->
+  <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+  >
+
+  <!-- CSS personalizado -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-  <header>
-    <h1>PetShop Cãopanheiro</h1>
-    <nav>
-      <a href="index.html">Início</a> |
-      <a href="produtos.html">Produtos</a> |
-      <a href="servicos.html">Serviços</a> |
-      <a href="contato.html">Contato</a>
-    </nav>
+
+  <!-- ========================= HEADER ========================= -->
+  <header class="bg-primary text-white py-3 mb-4">
+    <div class="container">
+      <h1 class="text-center">PetShop Cãopanheiro</h1>
+
+      <nav class="text-center mt-2">
+        <a class="text-white fw-bold mx-2" href="index.html">Início</a>
+        <a class="text-white fw-bold mx-2" href="produtos.html">Produtos</a>
+        <a class="text-white fw-bold mx-2" href="servicos.html">Serviços</a>
+        <a class="text-white fw-bold mx-2" href="contatos.html">Contato</a>
+        <a class="text-white fw-bold mx-2" href="agendamento.html">Agendamento</a>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <h2>Bem-vindo ao PetShop Cãopanheiro!</h2>
-    <p>Somos apaixonados por animais e dedicados a oferecer os melhores produtos e serviços para o seu pet. Trabalhamos com qualidade, carinho e compromisso para garantir o bem-estar do seu melhor amigo.</p>
-    <p>Explore nossas categorias de produtos e descubra tudo o que temos para oferecer — desde brinquedos e rações até serviços de banho e tosa profissional.</p>
-    <img src="imagens/petshop.webp" alt="PetShop Cãopanheiro" width="300">
+  <!-- ========================= CARROSSEL (Fase 2) ========================= -->
+  <section class="container mb-5">
+    <div id="carouselCaopanheiro" class="carousel slide" data-bs-ride="carousel">
+
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselCaopanheiro" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#carouselCaopanheiro" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#carouselCaopanheiro" data-bs-slide-to="2"></button>
+      </div>
+
+      <div class="carousel-inner">
+
+        <div class="carousel-item active">
+          <img src="imagens/banho.jpg" class="d-block w-100" alt="Banho para pets">
+          <div class="carousel-caption bg-dark bg-opacity-50 p-2 rounded">
+            <h5>Banho Profissional</h5>
+            <p>Higiene e cuidado com carinho.</p>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="imagens/tosa.jpg" class="d-block w-100" alt="Tosa para pets">
+          <div class="carousel-caption bg-dark bg-opacity-50 p-2 rounded">
+            <h5>Tosa Completa</h5>
+            <p>Estilo e beleza para seu pet.</p>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="imagens/telebusca.jpg" class="d-block w-100" alt="Tele-busca">
+          <div class="carousel-caption bg-dark bg-opacity-50 p-2 rounded">
+            <h5>Tele-busca e Entrega</h5>
+            <p>Agende e buscamos seu pet em casa.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselCaopanheiro" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselCaopanheiro" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+
+    </div>
+  </section>
+
+  <!-- ========================= MAIN ORIGINAL + estilização ========================= -->
+  <main class="container mb-5">
+    <h2 class="text-center mb-3">Bem-vindo ao PetShop Cãopanheiro!</h2>
+
+    <p class="lead text-center">
+      Somos apaixonados por animais e dedicados a oferecer os melhores produtos e 
+      serviços para o seu pet. Trabalhamos com qualidade, carinho e compromisso 
+      para garantir o bem-estar do seu melhor amigo.
+    </p>
+
+    <p class="text-center">
+      Explore nossas categorias de produtos e descubra tudo o que temos para oferecer — 
+      desde brinquedos e rações até serviços de banho e tosa profissional.
+    </p>
+
+    <div class="text-center">
+      <img src="imagens/petshop.webp" alt="PetShop Cãopanheiro" class="img-fluid rounded shadow" width="1280">
+    </div>
   </main>
 
-  <footer>
+  <!-- ========================= FOOTER ========================= -->
+  <footer class="bg-dark text-white text-center py-4">
     <p>© 2025 PetShop Cãopanheiro - Todos os direitos reservados.</p>
     <p>Desenvolvido por Gabriel Mansolff | Contato: caopanheiro@gmail.com</p>
   </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JS próprio (exemplo de função da fase 2) -->
+  <script src="js/script.js"></script>
+
 </body>
 </html>
